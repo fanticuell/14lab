@@ -9,6 +9,7 @@ namespace PlacesLibrary
     public class Region : Place, IInit
     {
         protected string regionCenter;
+        public int RegionId { get; set; }
 
         public string RegionCenter
         {
@@ -24,11 +25,13 @@ namespace PlacesLibrary
         public Region() : base()
         {
             RegionCenter = "Неизвестно";
+            RegionId = rnd.Next(1, 100);
         }
 
-        public Region(string name, string center) : base(name)
+        public Region(string name, string center, int id) : base(name)
         {
             RegionCenter = center;
+            RegionId = id;
         }
 
         public Region(Region other) : base(other)

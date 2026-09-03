@@ -21,14 +21,18 @@ namespace PlacesLibrary
             }
         }
 
+        public double Area { get; set; }
+
         public City() : base()
         {
-            Population = 0;
+            Population = rnd.Next(1000, 500000);
+            Area = rnd.Next(10, 500);
         }
 
-        public City(string name, string center, int population) : base(name, center)
+        public City(string name, string center, int id, int population, double area) : base(name, center, id)
         {
             Population = population;
+            Area = area;
         }
 
         public City(City other) : base(other)
@@ -38,8 +42,7 @@ namespace PlacesLibrary
 
         public override void Show()
         {
-            base.Show();
-            Console.WriteLine($"Население: {Population}");
+            Console.WriteLine($"Город: {Name}, ID региона: {RegionId}, Население: {Population} чел., Площадь: {Area} кв.км");
         }
 
         public override void Init()

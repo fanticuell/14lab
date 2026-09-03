@@ -15,8 +15,8 @@ namespace PlacesLibrary
             IsCapital = false;
         }
 
-        public Megapolis(string name, string center, int population, bool isCapital)
-            : base(name, center, population)
+        public Megapolis(string name, string center, int id, int population, double area, bool isCapital)
+            : base(name, center, id, population, area)
         {
             IsCapital = isCapital;
         }
@@ -28,8 +28,7 @@ namespace PlacesLibrary
 
         public override void Show()
         {
-            base.Show();
-            Console.WriteLine($"Столица: {IsCapital}");
+            Console.WriteLine($"Мегаполис: {Name}, ID региона: {RegionId}, Население: {Population} чел., Столица: {(IsCapital ? "Да" : "Нет")}");
         }
 
         public override void Init()

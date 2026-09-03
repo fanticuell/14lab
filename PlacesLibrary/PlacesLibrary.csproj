@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="City.cs" />
+    <Compile Include="DataInitializer.cs" />
+    <Compile Include="LinqRequests.cs" />
     <Compile Include="Megapolis.cs" />
+    <Compile Include="PerformanceTester.cs" />
     <Compile Include="Place.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomClass.cs" />
