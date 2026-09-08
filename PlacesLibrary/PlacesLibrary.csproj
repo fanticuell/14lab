@@ -43,9 +43,14 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="City.cs" />
+    <Compile Include="CollectionHandlerEventArgs.cs" />
     <Compile Include="DataInitializer.cs" />
     <Compile Include="LinqRequests.cs" />
     <Compile Include="Megapolis.cs" />
+    <Compile Include="MyCollection.cs" />
+    <Compile Include="MyNewCollection.cs" />
+    <Compile Include="MyNewCollectionExtensions.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="PerformanceTester.cs" />
     <Compile Include="Place.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
